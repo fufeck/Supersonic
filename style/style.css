@@ -1,0 +1,32 @@
+:root {
+	--white-color: #F6F6F6;
+	--black-color: #272822;
+	--red-color: red;
+	--blue-color: blue;
+	--green-color: green;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--white-color);
+    color: var(--white-color);
+    font-family: "Courier New", Courier, monospace;
+    font-size: 12px;
+    line-height: 1.5em;
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    background: var(--black-color);
+    height: 100%;
+    margin: 0 0 0 350px;
+    position: relative;
+}
+
+ /*background-color: var(--main-bg-color);*/
