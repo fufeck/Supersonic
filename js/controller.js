@@ -1,62 +1,31 @@
-// var menu = false;
-// var Words = ["Bienvenue sur le porfolio de Fabien Tafforeau",
-// "Etudiant en 2 ème année à l'Ecole 42"];
+var toggle_menu = true;
 
-// function manageNav() {
-// 	menu = (menu) ? (false) : (true);
-// 	if (menu == true) {
-// 		$( "img" ).css( "visibility", function() {
-//   			return 'hidden';
-// 		});
-// 		$( "#welcom .block-empty .slide" ).addClass('hide');
-// 		$("nav").removeClass('animated fadeOutLeft');
-// 		$("nav").addClass('animated fadeInLeft');
-// 	} else {
-// 		$("nav").removeClass('animated fadeInLeft');
-// 		$("nav").addClass('animated fadeOutLeft');
-// 		$( "#welcom .block-empty .slide" ).removeClass('hide');
-// 		$( "img" ).css( "visibility", function() {
-//   			return 'visible';
-// 		});
-// 		};              // the function returns the product of p1 and p2
-// 	}
+$("#toggle-icon").click(function() {
+	$("#toggle-nav").slideToggle(100, function() {
+		if (toggle_menu) {
+			toggle_menu = false;
+			$("#toggle-icon i").removeClass("fa-caret-right");
+			$("#toggle-icon i").addClass("fa-caret-up");
+		} else {
+			toggle_menu = true;
+			$("#toggle-icon i").removeClass("fa-caret-up");
+			$("#toggle-icon i").addClass("fa-caret-right");
+		}
+  });
+});
 
-// 	function recurMsg(i) {
-// 		$( "#welcom .block-empty .slide" ).text(Words[i]);
-// 		$( "#welcom .block-empty .slide" ).addClass("animated fadeIn" );
-// 		setTimeout(function(){
-//      		  $("#welcom .block-empty .slide").removeClass("animated fadeIn").addClass('animated fadeOut');
-//      		  setTimeout(function(){
-// 	     		  $("#welcom .block-empty .slide").removeClass("animated fadeOut");  
-// 	     		  recurMsg((i == 0) ? (1) : (0));
-// 	 		  }, 500);
-//  		  }, 2000);
-// 	}
+$("#toggle-nav li").click(function() {
+	console.log(this.id);
+	$( "#content" ).load( "partials/" + this.id + ".html" );
+});
+// var current_page = "presentation"
 
-
-// $(".glyphicon-align-justify").click(function() {
-// 	manageNav();
-// }
-// );
-
-// $("nav a").click(function() {
-// 	manageNav();
-// }
-// );
-
-// $("nav a").hover(function() {
-// 	$( this ).addClass( "animated bounce" );
-// }, function() {
-// 	$( this ).removeClass( "animated bounce" );
-// }
-// );
-
-// $("a img").hover(function() {
-// 	$( this ).addClass( "animated pulse" );
-// }, function() {
-// 	$( this ).removeClass( "animated pulse" );
-// }
-// );
-
-
-// recurMsg(0);
+// $("#toggle-nav li").click(function() {
+// 	var that = this;
+// 	console.log(this);
+// $( "#new-projects" ).load( "/resources/load.html #projects li" );
+// 	$(".content #" + current_page).hide(100, function() {
+// 		current_page = that.id;
+// 		$(".content #" + current_page).show(100);
+// 	});
+// });

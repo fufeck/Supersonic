@@ -3,35 +3,30 @@
 	<head>
 		<meta charset="utf-8">
 		<!-- Latest compiled and minified CSS -->
-<!-- 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-		Optional theme
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
- -->		
- 		<link rel="stylesheet" href="style/style.css" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="style/font-awesome-4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="style/style.css" />
 		<!-- <link rel="stylesheet" href="css/animate.css" /> -->
 	</head>
 
-	<body>
-
-	<div class="content">
-		<section>
-			<ul>
-							
+	<body class="row">
+		<section class="menu col-xs-4 col-sm-4 col-md-4 col-lg-4">
+			<p id="toggle-icon">
+				<i class="icon-large fa fa-caret-right"></i>  Fabien Tafforeau
+			</p>
+			<ul id="toggle-nav">
+				<li id="welcom">presentation</li>
+				<li id="experience">experience</li>
 			</ul>
- 		</section>
+		</section>
 
+		<section id="content" class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+<!-- 			<div id="welcom-section" w3-include-html="partials/welcom.html"></div>
+			<div id="experience-section" w3-include-html="partials/experience.html"></div>
+ -->		</section>
 
-		<section>
-			<div id="welcom-section" w3-include-html="partials/welcom.html"></div>
-
- 		</section>
-
- 	</div>
 		<script src='js/jquery-3.1.1.min.js'></script>
 		<script src='js/controller.js'></script>
-<!-- 		<script src='js/bluebird.js'></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-		<script src='js/myAnimation.js'></script>
- -->
- 	</body>
+	</body>
+
 </html>
