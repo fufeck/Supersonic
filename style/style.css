@@ -7,6 +7,7 @@
 	--green-color: #7CFC00;
 }
 
+.color-j {color : #ccc;}
 .color-purple {color : #E066FF;}
 .color-yellow {color : yellow;}
 
@@ -23,6 +24,30 @@ html, body , ul {
     height: 100%;
     margin: 0;
     padding: 0;
+}
+
+#cv a {
+    color: var(--black-color);
+}
+
+#cv a:hover {
+    color: var(--black-color);
+    text-decoration: none;
+}
+
+#cv a:focus {
+    color: var(--black-color);
+    text-decoration: none;
+}
+
+#cv a:visited {
+    color: var(--black-color);
+    text-decoration: none;
+}
+
+#cv a:active {
+    color: var(--black-color);
+    text-decoration: none;
 }
 
 li {list-style: none;}
@@ -62,6 +87,7 @@ body {
     height: 100%;
     color: var(--white-color);
     background: var(--black-color);
+    overflow-y: scroll;
 }
 
 .lineNumbers {
@@ -80,8 +106,4 @@ body {
     width: 100%;
     padding-left: 40px;
     padding-top: 30px;
-}
-
-.test {
-    a : 100%;
 }

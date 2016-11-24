@@ -20,5 +20,7 @@ $("#toggle-icon").click(function() {
 
 $("#toggle-nav li").click(function() {
 	console.log(this.id);
-	$( "#content" ).load( "partials/" + this.id + ".html" );
+	if (this.id != "cv") {	
+		$( "#content" ).load( "partials/" + this.id + ".html" );
+	}
 });
