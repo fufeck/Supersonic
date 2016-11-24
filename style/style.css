@@ -3,11 +3,11 @@
 	--black-color: #272822;
     --gray-color: #8e8e8e;
 	--red-color: red;
-	--blue-color: #00BABC;
-	--green-color: green;
+	--blue-color: #38eeff;
+	--green-color: #7CFC00;
 }
 
-.color-purple {color : #BF5FFF;}
+.color-purple {color : #E066FF;}
 .color-yellow {color : yellow;}
 
 .color-gray {color : var(--gray-color);}
@@ -32,7 +32,7 @@ i {padding-left: 2px;padding-right: 2px;}
 
 body {
     font-family: "Courier New", Courier, monospace;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.5em;
 }
 
